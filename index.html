@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;NFT Minting Platform&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@font-face {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Sonic';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>src: url('assets/sonic-font.woff2') format('woff2');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Sonic', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-image: url('assets/sonic-bg.png');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-size: cover;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header, footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0054a6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0,0,0,0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffcd00;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.logo {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-image: url('assets/sonic-logo.png');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-size: contain;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-repeat: no-repeat;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffcd00;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #0054a6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 4px 2px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form input, form textarea, form button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logo"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;NFT Minting Platform&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#home"&gt;Home&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#create-nft"&gt;Create NFT&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#marketplace"&gt;Marketplace&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="home"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Welcome to Our NFT Minting Platform&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Create, mint, and trade NFTs easily with our platform. Connect your Keplr wallet to get started.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="button" id="connect-wallet"&gt;Connect Keplr Wallet&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="create-nft"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Create Your NFT&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Fill out the details below to create your NFT:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;form id="nft-form"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="nft-name"&gt;NFT Name:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="text" id="nft-name" name="nft-name" required&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="nft-description"&gt;Description:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;textarea id="nft-description" name="nft-description" required&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="nft-image"&gt;Upload Image:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="file" id="nft-image" name="nft-image" accept="image/*" required&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" type="submit"&gt;Mint NFT&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="marketplace"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;NFT Marketplace&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Explore and purchase NFTs from our marketplace:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="nft-items"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- NFT items will be dynamically loaded here --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2024 NFT Minting Platform. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/@cosmjs/stargate"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener("DOMContentLoaded", async () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const keplrWalletConnect = async () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (!window.keplr) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>alert("Please install Keplr extension");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>await window.keplr.enable("cosmoshub-4");</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const offlineSigner = window.getOfflineSigner("cosmoshub-4");</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const accounts = await offlineSigner.getAccounts();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return accounts[0].address;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const mintNFT = async (name, description, image) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const address = await keplrWalletConnect();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (!address) return;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const client = await cosmjs.StargateClient.connect("https://rpc.cosmos.network");</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const msg = {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>type: "wasm/MsgInstantiateContract",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>value: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>sender: address,</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>code_id: 1, // Replace with your actual code ID</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>label: "NFT Minting",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>init_msg: {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>name: name,</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>app_components: [</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>name: "auction",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>ado_type: "auction@1.0.0",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>component_type: {</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>new: "eyJhdXRob3JpemVkX3Rva2VuX2FkZHJlc3NlcyI6WyIuL3Rva2VucyJdLCJrZXJuZWxfYWRkcmVzcyI6InRlcnJhMWcwdnp4YzZhMGxheWh4ZHdjMjRrd3dhbTR2OTNwam1hbTVhNzd3dHZmaHpwZGx0cDgyZXN0azNrcGMiLCJhdXRob3JpemVkX2N3MjBfYWRkcmVzcyI6bnVsbH0="</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>name: "tokens",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>ado_type: "cw721@1.0.0",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>component_type: {</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>new: "eyJrZXJuZWxfYWRkcmVzcyI6InRlcnJhMWcwdnp4YzZhMGxheWh4ZHdjMjRrd3dhbTR2OTNwam1hbTVhNzd3dHZmaHpwZGx0cDgyZXN0azNrcGMiLCJzeW1ib2wiOiJKQ05GVCIsIm5hbWUiOiJKQyBORlQiLCJtaW50ZXIiOiJ0ZXJyYTE0ejN5YWtnNjk0MHNtNmtocTM3cXduZ3V1anB3bXA4cHJzejJqNyJ9"</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>chain_info: [],</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>kernel_address: "terra1g0vzxc6a0layhxdwc24kwwam4v93pjmam5a77wtvfhzpdltp82estk3kpc"</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const fee = { amount: [{ denom: "uatom", amount: "5000" }], gas: "200000" };</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const result = await client.signAndBroadcast(address, [msg], fee, "");</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.log(result);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById("nft-form").addEventListener("submit", async (event) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>event.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const name = document.getElementById("nft-name").value;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const description = document.getElementById("nft-description").value;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const image = document.getElementById("nft-image").files[0];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const reader = new FileReader();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>reader.onloadend = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const base64Image = reader.result;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>mintNFT(name, description, base64Image);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>};</p>
+<p class="p1"><span class="Apple-converted-space">                </span>reader.readAsDataURL(image);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById("connect-wallet").addEventListener("click", keplrWalletConnect);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
